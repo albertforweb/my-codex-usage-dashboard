@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "my-usage",
+  "version": "0.2.5",
+  "description": "Explore model, reasoning effort, and recorded token usage across local Codex sessions.",
+  "author": {
+    "name": "Hongwei"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "My Usage",
+        "shortDescription": "Codex model usage dashboard",
+        "longDescription": "A local, read-only Grafana-style dashboard for model, effort, and recorded token usage across Codex session logs.",
+        "developerName": "Hongwei",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": "Open my Codex model usage dashboard."
+      }
+    }
+  }
+}
